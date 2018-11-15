@@ -1,18 +1,24 @@
-total_bill = float(input("Total bill amount? "))
-service = input("Level of service? ")
-split = float(input("Split how many ways?"))
-good = float(0.20 * total_bill)
-fair = float(0.15 * total_bill)
-bad = float(0.10 * total_bill)
-good_bill = float(good + total_bill)
-fair_bill = float(fair + total_bill)
-bad_bill = float(bad + total_bill)
-if service == "good":
-    print("Tip amount: {:0.2f}".format(good))
-    print("Total amount: {:0.2f}".format(good_bill))
-elif service == "fair":
-    print("Tip amount: {:0.2f}".format(fair))
-    print("Total amount: {:0.2f}".format(fair_bill))
-elif service == "bad":
-    print("Tip amount: {:0.2f}".format(bad))
-    print("Total amount: {:0.2f}".format(bad_bill))
+Bill = (float(input("Total bill amount? ")))
+Service = (input("Level of Service? good, fair, bad: "))
+Split = (float(input("Split how many ways? ")))
+
+good = (float(0.20 * Bill))
+fair = (float(0.15 * Bill))
+bad = (float(0.10 * Bill))
+
+Good_Bill = (float(Bill + good))
+Fair_Bill = (float(Bill + fair))
+Bad_Bill = (float(Bill + bad))
+
+if Service == "good":
+    print("Tip amount: ", "{:.2f}".format(good))
+    print("Total amount: ", "{:.2f}".format(Good_Bill))
+    print("Amount per person: ")
+elif Service == "fair":
+    print("Tip amount: ", "{:.2f}".format(fair))
+    print("Total amount: ", "{:.2f}".format(Fair_Bill))
+    print("Amount per person: ")
+elif Service == "bad":
+    print("Tip amount: ", "{:.2f}".format(bad))
+    print("Total amount: ", "{:.2f}".format(Bad_Bill))
+    print("Amount per person: ")
