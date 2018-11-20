@@ -1,0 +1,1 @@
+print("Yee Haw"[::-1])
